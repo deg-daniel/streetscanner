@@ -5,7 +5,7 @@ Outil de processing StreetView et d'analyse d'images via VQA (Visual Question An
 ## 🚀 Démo
 Voici un aperçu de l'outil en action :
 
-<video src="video.mp4" width="100%" controls></video>
+[![demo](video.gif)](video.gif)
 
 ## 🛠️ Installation
 Utilise `uv` pour un setup ultra-rapide et déterministe :
