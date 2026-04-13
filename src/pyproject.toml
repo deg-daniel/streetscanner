@@ -1,0 +1,20 @@
+[project]
+name = "street-scanner"
+version = "0.1.0"
+description = "Streetview processing and VQA analysis tool"
+requires-python = ">=3.10"
+dependencies = [
+    "requests",
+    "polyline",
+    "torch",
+    "torchvision",
+    "transformers",
+    "pillow",
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "python-multipart"
+]
+
+[tool.setuptools]
+packages = ["."]

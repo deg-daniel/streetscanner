@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>ONINT GoogleStreetMap</title>
+
+  <link rel="stylesheet" href="/static/style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+<text y='.9em' font-size='90'>📍</text>
+</svg>">
+</head>
+
+<body>
+<div id="overlay" style="display:none;">
+  <div class="loader">
+    <div class="text">Processing..</div>
+    <div class="bar">
+      <div class="bar-inner"></div>
+    </div>
+  </div>
+</div>
+<div id="left">
+1. Enter adress or click on map<br/>
+  <input id="from" placeholder="From"/>
+  <input id="to" placeholder="To"/>
+  <button onclick="getItinerary()">Get itinerary</button>
+  <br/><br/>
+
+2. A description about what you search<br/>
+  <textarea id="desc" placeholder="Un magasin avec une porte bleu" rows="5"></textarea>
+  <button onclick="getAndAnalyze()">Start scan</button>
+<br/><br/>
+Optional, part of work<br/>
+  <button onclick="getImages()">Get only images</button>
+  <button onclick="analyze()">Scan on last images</button>
+  <br/><br/>
+
+  <progress id="progress" value="0" max="0"></progress>
+  <span id="statusInline">Idle</span>
+
+  <img id="preview"/>
+  <span id="analyzeInline"></span>
+</div>
+
+<div id="map"></div>
+
+<div id="right">
+	Result:<br/>
+	<br/>
+</div>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="/static/app.js"></script>
+
+</body>
+</html>
