@@ -13,7 +13,7 @@ Utilise `uv` pour un setup ultra-rapide et déterministe :
 ```bash
 # Clone le repo
 git clone [https://github.com/deg-daniel/streetscanner.git](https://github.com/deg-daniel/streetscanner.git)
-cd street-scanner
+cd streetscanner
 
 # Install dependencies et venv
 uv sync
